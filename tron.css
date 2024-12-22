@@ -1,0 +1,94 @@
+/* Tron Legacy Theme for Obsidian */
+
+.theme-light,
+.theme-dark {
+    --background-primary: #010b19;
+    --background-secondary: #02152e;
+    --background-secondary-alt: #032147;
+    --text-normal: #99e5fd;
+    --text-muted: #4f8bb3;
+    --text-faint: #2b4b66;
+    
+    /* Accent colors */
+    --interactive-accent: #07c2ef;
+    --interactive-accent-hover: #00f2ff;
+    --text-accent: #07c2ef;
+    --text-on-accent: #ffffff;
+    
+    /* Headers */
+    --text-title: #07c2ef;
+    --text-subtitle: #4f8bb3;
+    
+    /* UI Elements */
+    --interactive-normal: #032147;
+    --interactive-hover: #043264;
+    
+    /* Borders and dividers */
+    --border-color: #07c2ef33;
+    --divider-color: #07c2ef22;
+    
+    /* Code blocks */
+    --code-background: #021b3d;
+    --pre-code: #99e5fd;
+    --text-code: #99e5fd;
+}
+
+/* Add glowing effects to important elements */
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+    box-shadow: 0 0 10px var(--interactive-accent);
+}
+
+/* Headers with Tron-style underline */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-title);
+    border-bottom: 1px solid var(--interactive-accent);
+    padding-bottom: 4px;
+}
+
+/* Links with glow effect on hover */
+a.internal-link:hover,
+a.external-link:hover {
+    color: var(--interactive-accent-hover) !important;
+    text-shadow: 0 0 8px var(--interactive-accent);
+}
+
+/* Code blocks with Tron-style border */
+pre {
+    border: 1px solid var(--interactive-accent);
+    box-shadow: 0 0 10px var(--interactive-accent);
+}
+
+/* Active line indicators */
+.CodeMirror-activeline-background {
+    background: var(--interactive-normal);
+    border-left: 2px solid var(--interactive-accent);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: var(--interactive-accent);
+    border: 3px solid var(--background-primary);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-secondary);
+}
+
+/* Graph view colors */
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+    color: var(--interactive-accent) !important;
+}
+
+/* Active pane border */
+.workspace-leaf.mod-active .workspace-leaf-content {
+    border-color: var(--interactive-accent);
+}
+
+/* File explorer active file */
+.nav-file-title.is-active {
+    background-color: var(--interactive-normal);
+    border-left: 2px solid var(--interactive-accent);
+}

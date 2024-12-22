@@ -1,0 +1,195 @@
+/* Tron Flynn Theme for Obsidian - Enhanced menus with brighter text */
+
+.theme-light,
+.theme-dark {
+    /* Core colors - removing solid whites */
+    --background-primary: rgba(245, 249, 252, 0.95);
+    --background-secondary: rgba(237, 243, 247, 0.7);
+    --background-secondary-alt: rgba(229, 235, 239, 0.8);
+    
+    /* Brighter text colors */
+    --text-normal: #00b4ff;
+    --text-muted: #40c4ff;
+    --text-faint: #80d4ff;
+    
+    /* Accent colors - using white as accent */
+    --interactive-accent: rgba(255, 255, 255, 0.9);
+    --interactive-accent-hover: rgba(255, 255, 255, 0.95);
+    --text-accent: #ffffff;
+    --text-on-accent: #0099ff;
+    
+    /* Headers - Brighter */
+    --text-title: #ffffff;
+    --text-subtitle: #e6f3ff;
+    
+    /* UI Elements with transparency */
+    --interactive-normal: rgba(127, 204, 255, 0.2);
+    --interactive-hover: rgba(255, 255, 255, 0.15);
+    
+    /* Borders and dividers */
+    --border-color: rgba(255, 255, 255, 0.3);
+    --divider-color: rgba(255, 255, 255, 0.15);
+    
+    /* Code blocks */
+    --code-background: rgba(13, 25, 38, 0.6);
+    --pre-code: #ffffff;
+    --text-code: #ffffff;
+}
+
+/* Settings and menu specific styles */
+.setting-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.setting-item-name {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(127, 204, 255, 0.5);
+}
+
+.setting-item-description {
+    color: #80d4ff !important;
+}
+
+.modal {
+    background-color: rgba(13, 25, 38, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(127, 204, 255, 0.2);
+}
+
+.modal-bg {
+    background-color: rgba(13, 25, 38, 0.7);
+}
+
+.vertical-tab-header-group {
+    background-color: rgba(13, 25, 38, 0.6);
+}
+
+.vertical-tab-nav-item {
+    color: #40c4ff;
+}
+
+.vertical-tab-nav-item:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.vertical-tab-nav-item.is-active {
+    color: #ffffff;
+    background-color: rgba(127, 204, 255, 0.2);
+}
+
+/* Dropdown menus */
+.suggestion-container {
+    background-color: rgba(13, 25, 38, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.suggestion-item {
+    color: #40c4ff;
+}
+
+.suggestion-item.is-selected {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* Menu items */
+.menu {
+    background-color: rgba(13, 25, 38, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-item {
+    color: #40c4ff;
+}
+
+.menu-item:hover {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Settings buttons */
+button {
+    background-color: rgba(127, 204, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* Checkboxes in settings */
+input[type="checkbox"] {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Search bars in settings */
+input[type="text"],
+input[type="search"] {
+    background-color: rgba(13, 25, 38, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(127, 204, 255, 0.3);
+}
+
+/* Sliders in settings */
+input[type="range"] {
+    background-color: rgba(127, 204, 255, 0.2);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #ffffff;
+}
+
+/* Dropdowns in settings */
+select {
+    background-color: rgba(13, 25, 38, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+select:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(127, 204, 255, 0.3);
+}
+
+/* Plugin cards */
+.community-plugin-item {
+    background-color: rgba(13, 25, 38, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.community-plugin-item:hover {
+    background-color: rgba(13, 25, 38, 0.8);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Settings tabs */
+.settings-tab-bar {
+    background-color: rgba(13, 25, 38, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.settings-tab {
+    color: #40c4ff;
+}
+
+.settings-tab:hover {
+    color: #ffffff;
+}
+
+.settings-tab.is-active {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}

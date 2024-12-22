@@ -1,0 +1,122 @@
+/* Tron CLU Theme for Obsidian */
+
+.theme-light,
+.theme-dark {
+    --background-primary: #0c0806;
+    --background-secondary: #1a1410;
+    --background-secondary-alt: #261c15;
+    --text-normal: #ffd484;
+    --text-muted: #b38d4f;
+    --text-faint: #664d26;
+    
+    /* Accent colors - CLU's signature orange */
+    --interactive-accent: #ff8a00;
+    --interactive-accent-hover: #ffa640;
+    --text-accent: #ff8a00;
+    --text-on-accent: #ffffff;
+    
+    /* Headers */
+    --text-title: #ffa640;
+    --text-subtitle: #b38d4f;
+    
+    /* UI Elements */
+    --interactive-normal: #261c15;
+    --interactive-hover: #332419;
+    
+    /* Borders and dividers */
+    --border-color: #ff8a0033;
+    --divider-color: #ff8a0022;
+    
+    /* Code blocks */
+    --code-background: #1a1410;
+    --pre-code: #ffd484;
+    --text-code: #ffd484;
+}
+
+/* Add glowing effects to important elements - CLU's orange glow */
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+    box-shadow: 0 0 10px #ff8a0066;
+}
+
+/* Headers with CLU-style underline */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-title);
+    border-bottom: 1px solid var(--interactive-accent);
+    padding-bottom: 4px;
+    text-shadow: 0 0 5px #ff8a0044;
+}
+
+/* Links with CLU's glow effect on hover */
+a.internal-link:hover,
+a.external-link:hover {
+    color: var(--interactive-accent-hover) !important;
+    text-shadow: 0 0 8px #ff8a0088;
+}
+
+/* Code blocks with CLU-style border */
+pre {
+    border: 1px solid var(--interactive-accent);
+    box-shadow: 0 0 10px #ff8a0044;
+}
+
+/* Active line indicators */
+.CodeMirror-activeline-background {
+    background: var(--interactive-normal);
+    border-left: 2px solid var(--interactive-accent);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: var(--interactive-accent);
+    border: 3px solid var(--background-primary);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-secondary);
+}
+
+/* Graph view colors */
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+    color: var(--interactive-accent) !important;
+}
+
+/* Active pane border */
+.workspace-leaf.mod-active .workspace-leaf-content {
+    border-color: var(--interactive-accent);
+}
+
+/* File explorer active file */
+.nav-file-title.is-active {
+    background-color: var(--interactive-normal);
+    border-left: 2px solid var(--interactive-accent);
+}
+
+/* Checkbox custom styling */
+input[type=checkbox] {
+    border-color: var(--interactive-accent);
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--interactive-accent);
+    box-shadow: 0 0 5px #ff8a0066;
+}
+
+/* Tag styling */
+a.tag {
+    background-color: #ff8a0022;
+    border: 1px solid #ff8a0044;
+    color: var(--text-accent) !important;
+}
+
+a.tag:hover {
+    background-color: #ff8a0044;
+    text-shadow: 0 0 5px #ff8a0088;
+}
+
+/* Search highlight */
+.search-result-file-matched-text {
+    background-color: #ff8a0044;
+}
